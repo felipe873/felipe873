@@ -79,7 +79,142 @@ function adicionarAoCarrinho(produto) {
   console.log(carrinho);
 }
 
-<!---
-felipe873/felipe873 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+  <div class="produto">
+        <img src="https://via.placeholder.com/200" alt="Produto 1">
+        <h3>Produto 1</h3>
+        <p>Descrição breve do produto 1. Este é um produto de alta qualidade e com ótimo custo-benefício.</p>
+        <button onclick="adicionarAoCarrinho('Produto 1')">Adicionar ao Carrinho</button>
+      </div>
+
+      <!-- Produto 2 -->
+      <div class="produto">
+        <img src="https://via.placeholder.com/200" alt="Produto 2">
+        <h3>Produto 2</h3>
+        <p>Descrição breve do produto 2. Produto inovador para quem busca performance e qualidade.</p>
+        <button onclick="adicionarAoCarrinho('Produto 2')">Adicionar ao Carrinho</button>
+      </div>
+      
+      <!-- Produto 3 -->
+      <div class="produto">
+        <img src="https://via.placeholder.com/200" alt="Produto 3">
+        <h3>Produto 3</h3>
+        <p>Descrição breve do produto 3. Ideal para o dia a dia, com excelente durabilidade e design moderno.</p>
+        <button onclick="adicionarAoCarrinho('Produto 3')">Adicionar ao Carrinho</button>
+      </div>
+
+      <!-- Produto 4 -->
+      <div class="produto">
+        <img src="https://via.placeholder.com/200" alt="Produto 4">
+        <h3>Produto 4</h3>
+        <p>Descrição breve do produto 4. Perfeito para quem deseja inovação e sofisticação em seus produtos.</p>
+        <button onclick="adicionarAoCarrinho('Produto 4')">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Minha Loja - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+2. style.css (CSS para estilizar a página de produtos):
+Aqui, vamos fazer alguns ajustes para garantir que a página de produtos tenha um layout agradável.
+
+css
+Copiar código
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header .logo {
+  font-size: 2em;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.produtos-section {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.produtos-section h2 {
+  margin-bottom: 20px;
+}
+
+.produtos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.produto {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.produto:hover {
+  transform: scale(1.05);
+}
+
+.produto img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
