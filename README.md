@@ -71,6 +71,13 @@
 </body>
 </html>
 
+let carrinho = [];
+
+function adicionarAoCarrinho(produto) {
+  carrinho.push(produto);
+  alert(produto + ' foi adicionado ao seu carrinho!');
+  console.log(carrinho);
+}
 
 <!---
 felipe873/felipe873 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
